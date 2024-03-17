@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible"content="IE=edge">
+                    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+                        <title>CSSSelector</title>
+                        <style>
+                            /*UniversalSelector*/
+                            * {
+                                color: brown;
+                                background-color: bisque;
+                            }
+
+                            /*ElementSelector*/
+                            h2 {
+                                color: black;
+                            }
+
+                            /*ClassSelector*/
+                            p.success {
+                                color: green;
+                            }
+
+                            /*IdSelector*/
+                            p#danger {
+                                color: red;
+                            }
+
+                            /*AttributeSelector*/
+                            a[href] {
+                                font-size: 50px;
+                            }
+
+                            /*GroupSelector*/
+                            h1,
+                            h2,
+                            p {
+                                text-transform: uppercase;
+                            }
+
+                            /*ElementSpesificSelector*/
+                            p.judul {
+                                font-size: large;
+                            }
+
+                            span#important {
+                                color: red;
+                                font-weight: bold;
+                            }
+
+                            /*DescendantSelector*/
+                            divp {
+                                font-size: x-large;
+                            }
+
+                            /*ChildSelector*/
+                            div>p {
+                                color: cornflowerblue;
+                            }
+                        </style>
+        </head>
+
+        <body>
+            <h1>ThisisHeadingOne</h1>
+            <p>ThisisparagraphOne</p>
+            <hr>
+            <h2 class="judul">ThisisHeadingTwo</h2>
+                <p>ThisisparagraphTwo</p>
+                <hr>
+                <h3>ThisisHeadingTwo</h3>
+                <p class="success">ProsesRegistrasiBerhasil</p>
+                    <hr>
+                    <h4>ThisisHeadingFour</h4>
+                    <p id="danger">ProsesRegistrasiGagal</p>
+                        <hr>
+                        <a>LinkNonAktif</a>
+                        <a href="https: //is.ittelkom-sby.ac.id/"target="_blank">Klikdisini</a>
+                            <hr>
+                            <p class="judul">Loremipsumdolorsit,ametconsecteturadipisicingelit.Autvel,<span
+                                    id="important">dolor</span>,natusetquodperferendisvoluptasnemoexercitationemperspiciatis
+                                necessitatibusvelitsapienteminima.Pariaturconsecteturveniamaccusantiumsitearumdolorem.
+                                </p>
+                                <hr>
+                                <div>
+                                    <p>Loremipsumdolorsitametconsecteturadipisicingelit.Ullammagnamobcaecatiminimaipsam
+                                        corruptitotamquisquamisteexplicaboinmolestiaeaperiam,suntmolestiasdignissimosetpraesentiumfacilis
+                                        minusremeveniet.</p>
+                                    <section>
+                                        <p>Loremipsumdolor,sitametconsecteturadipisicingelit.Voluptatumnobis,debitisnihilcupiditate,
+                                            consequaturametlaudantiumbeataetotamplaceatiure,laborumnostrumrecusandaelaboreharumsimilique
+                                            impediteumsintea.</p>
+                                        <p>Loremipsum,dolorsitametconsecteturadipisicingelit.Architectooptioadipisciodio!Iustonatus
+                                            temporibuslaudantiumquamplaceatinventorevoluptateminimasedquas.Hicquamautodit.Animi,distinctio
+                                            modi!</p>
+                                    </section>
+                                </div>
+        </body>
+
+        </html>
